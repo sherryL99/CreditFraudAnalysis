@@ -1,8 +1,8 @@
 # CreditFraudAnalysis
 ## imbalanced dataset processing method
 For classification problem. if there exists imbalance dataset, some kind of data with high percentage will overfitting, but others will underfitting. <br>
-`highlight`
-    ’For example‘,
+```highlight```
+    `For example',
     `圆点`
      * in the credit fraud transaction, most of them are normal, but some of them has fraud behavior.<br>
      * in the problem of custom lossing, most of custmors will continue to use this service, but only a few of them won't.<br>
