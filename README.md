@@ -16,7 +16,9 @@ METHOD:<br>
 (2) based on Cost-Sensitive Learning, e.g. Adacost<br>
 (3) make imbalanced dataset One Class Learning, or Novelty Detection, e.g. One-class SVM<br>
 
-[go to top](#CreditFraudAnalysis)
+
 ## PCA  Transformation
 ## Classification by Naive Bayes,LR, DT...
 ## Cross validation
+
+[go back](#CreditFraudAnalysis)
