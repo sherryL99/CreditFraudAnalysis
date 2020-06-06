@@ -1,0 +1,8 @@
+dataset including 284807 data.
+
+the index of first column of each record is Id. 
+Id maynot be continuous because the raw dataset does not distinguish from training and testing data.
+
+dataset has been split by ration 8:2
+
+The predict result shoult has 2 columns: one is Id, other is Class
