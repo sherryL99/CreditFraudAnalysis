@@ -12,7 +12,7 @@ For this imbalanced scenario,  a `problem` will arise: if 90% of the training da
 `METHOD`:<br>
 (1) sampling: oversampling, undersampling<br>
 
-[reference](https://www.marcoaltini.com/blog/dealing-with-imbalanced-data-undersampling-oversampling-and-proper-cross-validation "click it out")
+[reference](https://www.marcoaltini.com/blog/dealing-with-imbalanced-data-undersampling-oversampling-and-proper-cross-validation "click it out")<br>
 (2) based on Cost-Sensitive Learning, e.g. Adacost<br>
 (3) make imbalanced dataset One Class Learning, or Novelty Detection, e.g. One-class SVM<br>
 
