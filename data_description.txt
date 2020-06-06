@@ -2,7 +2,7 @@ dataset including 284807 data.
 
 the index of first column of each record is Id. 
 Id maynot be continuous because the raw dataset does not distinguish from training and testing data.
-
+the index of second column of each record is time, which is the interval between the first transaction and this one. 
 dataset has been split by ration 8:2
 
 The predict result shoult has 2 columns: one is Id, other is Class
