@@ -15,11 +15,12 @@ For this imbalanced scenario,  a `problem` will arise: if 90% of the training da
 [reference](https://www.marcoaltini.com/blog/dealing-with-imbalanced-data-undersampling-oversampling-and-proper-cross-validation "click it out")<br>
 (2) based on Cost-Sensitive Learning, e.g. Adacost<br>
 (3) make imbalanced dataset One Class Learning, or Novelty Detection, e.g. One-class SVM<br>
-[params_DT](https://github.com/sherryL99/CreditFraudAnalysis/blob/master/DecisionTree_sklearn调参.txt "parameters of DT")<br>
-[params_LR](https://github.com/sherryL99/CreditFraudAnalysis/blob/master/params_LR调参.txt)<br>
 
 ## PCA  Transformation
 ## Classification by Naive Bayes,LR, DT...
+[params_DT](https://github.com/sherryL99/CreditFraudAnalysis/blob/master/DecisionTree_sklearn调参.txt "parameters of DT")<br>
+[params_LR](https://github.com/sherryL99/CreditFraudAnalysis/blob/master/params_LR调参.txt)<br>
+
 ## Cross validation
 
 [go back](#CreditFraudAnalysis)
