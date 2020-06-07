@@ -1,0 +1,59 @@
+class sklearn.tree.DecisionTreeClassifier(criterion='gini', splitter='best', 
+max_depth=None, min_samples_split=2,min_samples_leaf =1, min_weight_fraction_leaf=0.0, 
+max_features=None, random_state=None, max_leaf_nodes=None,class_weight=None, presort=False)
+
+
+criterion:string类型，可选（默认为"gini"）
+    衡量分类的质量。支持的标准有"gini"代表的是Gini impurity(不纯度)与"entropy"代表的是information gain（信息增益）。
+
+
+splitter:string类型，可选（默认为"best"）
+    一种用来在节点中选择分类的策略。支持的策略有"best"，选择最好的分类，"random"选择最好的随机分类。
+
+
+max_features:int,float,string or None 可选（默认为None）
+    在进行分类时需要考虑的特征数。
+    1.如果是int，在每次分类是都要考虑max_features个特征。
+    2.如果是float,那么max_features是一个百分率并且分类时需要考虑的特征数是int(max_features*n_features,其中n_features是训练完成时发特征数)。
+    3.如果是auto,max_features=sqrt(n_features)
+    4.如果是sqrt,max_features=sqrt(n_features)
+    5.如果是log2,max_features=log2(n_features)
+    6.如果是None，max_features=n_features
+    注意：至少找到一个样本点有效的被分类时，搜索分类才会停止。
+
+
+max_depth:int or None,可选（默认为"None"）
+    表示树的最大深度。如果是"None",则节点会一直扩展直到所有的叶子都是纯的或者所有的叶子节点都包含少于min_samples_split个样本点。忽视max_leaf_nodes是不是为None。
+
+
+min_samples_split:int,float,可选（默认为2）
+    区分一个内部节点需要的最少的样本数。    
+    1.如果是int，将其最为最小的样本数。
+    2.如果是float，min_samples_split是一个百分率并且ceil(min_samples_split*n_samples)是每个分类需要的样本数。ceil是取大于或等于指定表达式的最小整数。
+
+min_samples_leaf:int,float,可选（默认为1）
+    一个叶节点所需要的最小样本数：
+    1.如果是int，则其为最小样本数
+    2.如果是float，则它是一个百分率并且ceil(min_samples_leaf*n_samples)是每个节点所需的样本数。
+
+min_weight_fraction_leaf:float,可选（默认为0）
+    一个叶节点的输入样本所需要的最小的加权分数。
+
+
+max_leaf_nodes:int,None 可选（默认为None）
+    在最优方法中使用max_leaf_nodes构建一个树。最好的节点是在杂质相对减少。如果是None则对叶节点的数目没有限制。如果不是None则不考虑max_depth.
+
+
+class_weight:dict,list of dicts,"Banlanced" or None,可选（默认为None）
+    表示在表{class_label:weight}中的类的关联权值。如果没有指定，所有类的权值都为1。对于多输出问题，一列字典的顺序可以与一列y的次序相同。
+    "balanced"模型使用y的值去自动适应权值，并且是以输入数据中类的频率的反比例。如：n_samples/(n_classes*np.bincount(y))。
+    对于多输出，每列y的权值都会想乘。
+    如果sample_weight已经指定了，这些权值将于samples以合适的方法相乘。
+
+
+random_state:int,RandomState instance or None
+    如果是int,random_state 是随机数字发生器的种子；如果是RandomState，random_state是随机数字发生器，如果是None，随机数字发生器是np.random使用的RandomState instance.
+
+
+persort:bool,可选（默认为False）
+    是否预分类数据以加速训练时最好分类的查找。在有大数据集的决策树中，如果设为true可能会减慢训练的过程。当使用一个小数据集或者一个深度受限的决策树中，可以减速训练的过程。
